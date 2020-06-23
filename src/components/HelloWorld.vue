@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>Hello World: Hi there!</h1>
+    <p>{{greeting}}</p>
   </div>
 </template>
 
@@ -9,6 +10,13 @@ export default {
   name: "HelloWorld",
   props: {
     msg: String
+  },
+  data: function() {
+    return {
+      //data properties
+      greeting: "Hello there!",
+      counter: 0
+    };
   }
 };
 </script>
